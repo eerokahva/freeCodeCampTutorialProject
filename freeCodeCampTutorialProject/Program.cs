@@ -10,37 +10,25 @@ namespace freeCodeCampTutorialProject
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter operator: ");
-            string op = Console.ReadLine();
-
-            Console.Write("Enter another number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            if (op == "+")
-            {
-                Console.WriteLine(num1 + num2);
-            } else if (op == "-")
-            {
-                Console.WriteLine(num1 - num2);
-            }
-            else if (op == "*")
-            {
-                Console.WriteLine(num1 * num2);
-            }
-            else if (op == "/")
-            {
-                Console.WriteLine(num1 / num2);
-            } else
-            {
-                Console.WriteLine("Invalid operator!");
-            }
+            Console.WriteLine(GetPower(4, 10));
 
             Console.ReadLine();
         }
 
+        static int GetPower(int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for (int i = 0; i<powNum; i++)
+            {
+                result = result * baseNum;
+            }
+            
+            return result;
+        }
         
+            
+
     }
 }
