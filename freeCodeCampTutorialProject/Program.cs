@@ -11,21 +11,17 @@ namespace freeCodeCampTutorialProject
         static void Main(string[] args)
         {
 
-            Console.WriteLine(GetPower(4, 10));
+            Book book1 = new Book("Harry Potter","Rowling",400);
+
+
+            Book book2 = new Book("Lord of the rings", "Tolkien", 700);
+
+            book2.title = "Hobbit";
+
+            Console.WriteLine(book2.title);
+            Console.WriteLine(book2.author);
 
             Console.ReadLine();
-        }
-
-        static int GetPower(int baseNum, int powNum)
-        {
-            int result = 1;
-
-            for (int i = 0; i<powNum; i++)
-            {
-                result = result * baseNum;
-            }
-            
-            return result;
         }
         
             
