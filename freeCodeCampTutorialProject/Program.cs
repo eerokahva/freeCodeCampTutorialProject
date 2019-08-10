@@ -11,15 +11,11 @@ namespace freeCodeCampTutorialProject
         static void Main(string[] args)
         {
 
-            Book book1 = new Book("Harry Potter","Rowling",400);
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG");
+            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
 
+            Console.WriteLine(avengers.Rating);
 
-            Book book2 = new Book("Lord of the rings", "Tolkien", 700);
-
-            book2.title = "Hobbit";
-
-            Console.WriteLine(book2.title);
-            Console.WriteLine(book2.author);
 
             Console.ReadLine();
         }
