@@ -11,10 +11,11 @@ namespace freeCodeCampTutorialProject
         static void Main(string[] args)
         {
 
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG");
-            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+            Chef chef = new Chef();
+            chef.MakeSpecialDish();
 
-            Console.WriteLine(avengers.Rating);
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeSpecialDish();
 
 
             Console.ReadLine();
